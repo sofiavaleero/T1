@@ -106,20 +106,31 @@ Proves i exercicis a fer i entregar
 1. Reprodueix l'exemple fent servir diferents freqüències per la sinusoide. Al menys considera $f_x = 4$ kHz, a banda d'una
     freqüència pròpia en el marge audible. Comenta els resultats.
 
+Reproduint el fitxer d'exemple amb diferents frequències aconseguim que soni més agut o més greu, quan més alta és la frequència més agut és el so.  
+
 2. Modifica el programa per considerar com a senyal a analitzar el senyal del fitxer wav que has creat 
     (`x_r, fm = sf.read('nom_fitxer.wav')`).
 
     - Insereix a continuació una gràfica que mostri 5 períodes del senyal i la seva transformada.
 
+<img src="figure_1.png" width="480" align="center">
+
     - Explica el resultat del apartat anterior.
+En la transformada veiem el domini frequencial del senyal de l'apartat anterior. Té forma de sinc degut a que el senyal és una sinusoide i és periòdica. Ho podem veure també en la evolució dels 5 periodes. 
 
 3. Modifica el programa per representar el mòdul de la Transformada de Fourier en dB i l'eix d'abscisses en el marge de
     $0$ a $f_m/2$ en Hz.
 
     - Comprova que la mesura de freqüència es correspon amb la freqüència de la sinusoide que has fet servir.
 
-    - Com pots identificar l'amplitud de la sinusoide a partir de la representació de la transformada?
+    <img src="figure_2.png" width="480" align="center">
+
+    - Com pots identificar l'amplitud de la sinusoide a partir de la representació de la transformada? 
+    
+    A partir de la frequència identifiquem el valor complexe que inclueix l'amplitud del senyal fent el calcul del valor absolut de l'arrel quadrada de la part real i imaginaria. 
+      
       Comprova-ho amb el senyal generat.
+
 
 > NOTES:
 >
@@ -137,7 +148,7 @@ Proves i exercicis a fer i entregar
     - Freqüència de mostratge.
     - Nombre de mostres de senyal.
     - Tria un segment de senyal de 25ms i insereix una gráfica amb la seva evolució temporal.
-    - Representa la seva transformada en dB en funció de la freqüència, en el marge $f_m\le f\le f_m/2$.
+    - Representa la seva transformada en dB en funció de la freqüència, en el marge $0\le f\le f_m/2$.
     - Quines son les freqüències més importants del segment triat?
 
 
